@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*------------------------Oбнуление--------------------*/
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------Default--------------------*/
+.container {
+  max-width: 1298px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.pege {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  font-size: 18.47px;
+  color: #404040;
+  font-family: Poppins, sans-serif, sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  height: 100%;
+}
+body a {
+  text-decoration: none;
+}
+body._pc .navigation__list .navigation__item:hover .navigation__sub-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: transform 0.3s ease-out 0s;
+}
+body._touch .navigation__link-vector {
+  display: block;
+  margin-left: 5px;
+  transition: transform 0.3s ease-out 0s;
+}
+body._touch .navigation__list > li {
+  display: flex;
+  align-items: center;
+}
+body._touch .navigation__list > li._active .navigation__sub-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: transform 0.3s ease-out 0s;
+}
+body._touch .navigation__list > li._active .navigation__link-vector {
+  transform: rotate(-180deg);
+}
+body._lock {
+  overflow: hidden;
+}
